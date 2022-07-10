@@ -160,23 +160,23 @@
     
     <h4><b>3. City of Toronto Coronavirus (COVID-19) Web Map Application</b></h4>
     <p>Created with ArcGIS Pro and hosted on ArcGIS Online, this application revolves around the coronavirus (COVID-19) and related datasets within the city of Toronto. This application has data layers including areas of neighbourhood improvement, locations of immunization clinics, testing site locations, public health service provider locations and the neighbourhood profile of Toronto (includes clipped data from an air pollution and COVID-19 impacts dataset in Toronto Neighbourhoods). Using ArcGIS WebApp Builder, the application has various widgets/elements and users can zoom in and out of different areas, filter data and layers and select different areas for information. The data for this project was gathered from various open datasets such as the City of Toronto, Government of Canada, and the Ontario GeoHub website.</p>
-    <img src="images/storymap.png" alt="COVID Web Map" width="350" height="350">
+    <img src="images/toronto.PNG" alt="COVID Web Map" width="350" height="350">
     
     <h5><b>Arcade</b></h5>
     <p>The Arcade expression makes use of the male and female population data within the Neighbourhood Profile + Air Pollution and COVID-19 dataset. I created the variables "MAL" for male populations and "FEM" for female populations. The expression makes use of the logical function ("when") to evaluate records as either "high" if the male population is over 50 and "low" if the female population is less than 50. If the expressions both evaluate to not true, then it results in "n/a".</p>
-    <img src="images/storymap.png" alt="Arcade" width="350" height="350">
+    <img src="images/arcade2.PNG" alt="Arcade" width="350" height="350">
 
     <h5><b>Python/ArcPy Code</b></h5>
     <p>With ArcGIS Pro and ArcPy, following python code lists all the current layers within this project and to check whether they have broken data sources. I made use of various ArcPy and Python features such as listLayers, listMaps, isBroken, for loops, arcpy.mp.ArcGISProject, print function and more. I first created a variable ("aprx") which references the current project. I then made use of the listMaps and listLayers methods to produce a list of all layers for each according map in the project. Following this, the for loops were used to iterate through each layer and print their names and associated isBroken layer property (checks for broken data source). The use of "\n" is done to input a line before the map name and form a separation between every layer for each map.GIS</p>
-    <img src="images/storymap.png" alt="Python Code" width="350" height="350">
+    <img src="images/python.PNG" alt="Python Code" width="350" height="350">
     
     <h4><b>4. Google Earth Engine Widget & Nitrogen Dioxide Concentration Levels</b></h4>
     <p>Based on a workshop, aGoogle Earth Engine widget was developed using JavaScript code to compare nitrogen dioxide concentration levels in Toronto, Detroit, New York, and Chicago in 2019 and 2020. The data and information were taken from the TROPOspheric Monitoring Instrument (TROPOMI) dataset which is a satellite instrument that produces near real-time high-resolution imagery of nitrogen dioxide and oxide concentration levels. Software/Languages: Google Earth Engine & JavaScript. The code displays the differences between the nitrogen dioxide columns in Toronto, Detroit, New York and Chicago (and also a bit in Montreal) and shows that their concentration levels are noticeably less in 2020 compared to 2019. These differences can be a result of the various coronavirus lockdowns that occurred during those time periods.</p>
-	<img src="images/storymap.png" alt="Google Earth Widget" width="350" height="350">
+	<img src="images/google.PNG" alt="Google Earth Widget" width="350" height="350">
     
     <h5><b>Code Breakdown</b></h5>
     <p>To create these resulting maps, the code had to developed a certain way with the first step being to import the TROPOMI nitrogen dioxide dataset, selected a product and then filter it for two separate timeframes. To display the various nitrogen dioxide concentration levels, I had to create a gradient of band color to represent them.The ui. functions are used to develop the widget and would now need to create two separate maps to display the information. Followed by this, both maps will have to be linked which will complete the widget and this is done with the ui.Map.Linker() function and setting the center of the map. The middle separator bar can work to compare the differences in nitrogen dioxide concentration levels between both timeframes.</p>
-	<img src="images/storymap.png" alt="Google Earth Code" width="350" height="350">
+	<img src="images/python2.PNG" alt="Google Earth Code" width="350" height="350">
     
     
     <h4><b>5. Cartographic Map of Zambia Hosptials & Airports</b></h4>
