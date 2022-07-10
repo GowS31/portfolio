@@ -1,243 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Project 2205</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif; margin-top: 16px}
-.w3-bar,h1,button {font-family: 'Lucida Sans', sans-serif}
-.fa-cog, .fa-info-circle, .fa-gears, .fa-map-marker, .fa-lightbulb-o, .fa-exclamation-triangle, .fa-user {font-size:200px}
-</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
-<!-- This template was taken from w3 schools and adapted to suit our project, see footer for reference link -->
-
-<!-- Taken from and adapted from https://www.w3schools.com/css/css_navbar.asp and https://www.w3schools.com/css/css_dropdowns.asp-->
-<!-- NavBar here -->
-<div class="navbar">
-    <div>
-        <ul>
-            <li><a href=#header>Home</a></li>
-            <li><a href=#intro>Introduction</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Project Process</a>
-                    <div class="dropdown-content">
-                        <a href=#data>Data Pre-Processing</a>
-                        <a href=#pro>ArcGIS Pro/Desktop Tools</a>
-                        <a href=#story>ArcGIS StoryMaps</a>
-                        <a href=#vert>Geocortex 5 Web</a>
-                        <a href=#dash>ArcGIS Dashboards</a>
-                    </div>
-            <li><a href=#conclusion>Conclusion</a></li>
-        </ul>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
+  </div>
 </div>
 
-<!-- Header starts here ------------------------------------>
-<header id="header" class="w3-container headerpic w3-center" style="padding:90px 16px">
-    <h1 class="w3-margin headerwords w3-jumbo">Identifying Flood Vulnerable Assets in York Region</h1>
-    <p class="w3-xlarge headerwords">A GIS solution for York Region GIS staff to identify and monitor flood vulnerable assets.</p>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
 </header>
 
-<!-- Introduction Section Starts Here --------------------------------->
-<div id="intro" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Introduction</h1>
-            <h5 class="w3-padding-16">This project aimed to provide a first look at the vulnerability of the Region's transportation assets to flooding.</h5>
-            <h5 class="w3-padding-16">This website serves as a walkthrough of the development processes undertaken by GLAM Solutions team for creating desktop and web based solutions for identifying flood vulnerable assets in York Region.</h5>
-            <h1>The Team</h1>
-            <h5>Ashley Ford</h5>
-            <p class="w3-text-grey">Web GIS Specialist</p>
-            <h5>Lindsay Aldous</h5>
-            <p class="w3-text-grey">GIS Analyst</p>
-            <h5>Mark VanDam</h5>
-            <p class="w3-text-grey">GIS Developer</p>
-            <h5>Gowsigan Sritharan</h5>
-            <p class="w3-text-grey">GIS Developer</p>
-            <h1>Overview</h1>
-            <h5>Client</h5>
-            <p class="w3-text-grey">The Transportation and Infrastructure Planning division of York Region’s Transportation Services department.</p>
-            <h5>Problem Definition</h5>
-            <p class="w3-text-grey">To assist regional staff in determining critical transportation infrastructure assets that are currently at risk of damage during flood events. The process also identifies assets for priority intervention based on their criticality in the infrastructure system. </p>
-            <h5>Objectives</h5>
-            <p class="w3-text-grey">To develop desktop tools and web solutions (Dashboard & Geocortex 5 Web Viewer) to be used by York Region staff for assessing design standards for asset types in floodplain locations.</p>
-            <h5>Technology Used</h5>
-            <p class="w3-text-grey">ArcGIS Technology (ArcGIS Pro, ArcGIS Dashboards, ArcGIS Online) and Geocortex 5 Web</p>
-        </div>
-        <!-- Pictures go here ---->
-        <div class="w3-third w3-center">
-            <i class="fa fa-info-circle w3-padding-64 YRblueIcon"></i>
-            <p>  </p> <!-- Don't remove p tag has spaces in it, important for spacing out images---->
-            <i class="fa fa-user w3-padding-64 YRblueIcon"></i>
-            <p>  </p> <!-- Don't remove p tag has spaces in it, important for spacing out images---->
-            <i class="fa fa-exclamation-triangle w3-padding-64 YRblueIcon"></i>
-        </div>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
     </div>
-</div>
-
-<!-- Visual Break-up Grid ------------------------------------------------------------------------->
-<div id="process" class="w3-container YRblue w3-center w3-padding-16">
-    <h1>Project Process</h1> 
-</div>
-
-<!-- Data Pre-Processing Grid ----------------------------------->
-<div  id="data" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="content2">
-        <div class="w3-third extrapadr">
-            <h1>Data Pre-Processing</h1>
-            <h5 class="w3-padding-16">The data required some manipulation to be ready for the spatial analysis process.</h5>
-            <p class="w3-text-grey">This included clipping the outliers of the assets located outside of York Region to prevent erroneous results. The multiple flood-related data layers that were provided initially were consolidated into a single floodplain and any asset layers missing a corresponding road segment identifier had to be matched with one to facilitate the calculation of criticality.</p>
-            <h4>Data Assumptions</h4>
-            <p class="w3-text-grey">It is assumed that these asset layers all contain a field called “SEGMENTID” which identifies what regional road they are nearest to. Finally, the user only wishes to compare an asset layer against a single floodplain layer.</p>
-            <h4>Transportation Assets</h4>
-            <p class="w3-text-grey">Some of the asset data received from the client already had a segment ID but any that did not was run through a one-to-one Spatial Join with the asset as the target feature, the regional road data as the join feature, the Closest match option, and the only output field inherited from the road layer as SEGMENTID. For the two asset layers that contained features positioned well away from regional roads (trnBusStop and trnYRTHub), a search radius of 100 metres was included when running the spatial join to prevent criticality from being falsely inflated by assets that do not actually exist near the road segment. </p>
-        </div>
-        <!-- Picture goes here ---->
-        <div class="w3-twothird">
-            <img src="images/FloodplainMapFull.jpg" alt="Data Before and After">
-            <h4>Floodplains</h4>
-            <p class="w3-text-grey">Three of the flood-related layers acquired from the client were filtered and combined to create a single floodplain that represented the inundated area in the worst-case flooding scenario for the whole region. Since two different conservation authorities assembled the flood data, there were some notable differences in the datasets that required them to be initially processed separately.</p>
-            <p class="w3-text-grey">The data from TRCA delineated worst-case scenario flood polylines. To produce a TRCA floodplain, edits were made to the data to close any open polylines under the assumption that a straight-line connection between endpoints was acceptable. The “must not have dangles” topological rule was implemented to catch any residual open polylines. Then, the flood lines layer was run through the Feature to Polygon tool to produce a floodplain. The flood data from LSRCA was split between two different layers, The two layers were filtered then merged and, as with the TRCA data, a field was added and populated to store the name of the source conservation authority.   </p>
-        </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
     </div>
-</div>
-
-<!-- ArcGIS Pro Grid ----------------------------------->
-<div  id="pro" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="content2">
-        <div class="w3-third extrapadr">
-            <h1>ArcGIS Pro / Desktop Tools</h1>
-            <h5 class="w3-padding-32">In order to provide the client with an iterative process for identifying criticality and flood vulnerable assets, ArcGIS Pro was used to develop desktop ModelBuilder and Python tools to accomplish this.</h5>
-            <h4>Find Flood Vulnerable Assets Tool</h4>
-            <p class="w3-text-grey">This tool will identify assets that are at risk of flooding</p>
-            <h4>Criticality Ranking Tool</h4> 
-            <p class="w3-text-grey">This tool will rank road assets based on the total number of assets along a given road segment.</p>
-        </div>
-        <!-- Picture goes here ---->
-        <div class="w3-twothird">
-            <img src="images/Model.PNG" alt="ArcGIS Pro Window showing Find Flood Vulnerable Assets Tool model.">
-            <h4>Find Flood Vulnerable Assets Tool Development</h4>
-            <p class="w3-text-grey">This tool was developed over several iterations. The final version will take several asset layers, and one floodplain layer. It then adds a field for the AtRisk value if it does not already exist in the data. Then, it determines if the asset lies within the floodplain, and applies a value to the AtRisk field, 0 for Not At Risk, and 1 if it is at risk of flooding.</p>
-            <h4>Criticality Ranking Tool Development</h4>
-            <p class="w3-text-grey">The Criticality Ranking Tool takes several asset layers, and one road layer as input, and identifies the total number of assets along a given segment of Road. This total is the Criticality Ranking, and is used to prioritize resource allocations for roads that are most critical.</p>
-        </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
     </div>
-</div>
-
-<!-- StoryMaps Grid ----------------------------------->
-<div  id="story" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="content2">
-        <div class="w3-third extrapadr">
-            <h1>ArcGIS StoryMaps</h1>
-            <h5 class="w3-padding-32">A StoryMap Collection is used as the container for the two web products that were created in this project. This allows the user to stay on one page to view two different applications.</h5>
-            <h4>Application Design</h4>
-            <p class="w3-text-grey">The Collection keeps the light colour theme of both the Web Viewer and Dashboard products and makes use of a prominent shade of blue from York Region's logo as the accent colour for consistency.</p>
-            <h4>Development Process</h4>
-            <p class="w3-text-grey">Configuration of the StoryMap Collection was very simple. In a new Collection template, the two applications were added as ArcGIS Content with appropriate thumbnails and titles. The default “Grid” layout option was kept and the Navigation style was set to the tabbed option so the application titles would be displayed in the final collection.</p>
-        </div>
-        <!-- Picture goes here ---->
-        <div class="w3-twothird">
-            <img src="images/StoryMapSample.png" alt="ArcGIS StoryMap Sample">
-            <a href="https://storymaps.arcgis.com/collections/fae67d783640449f9658a6fc6e365609" target="_blank" class="w3-button YRblue w3-padding-large w3-large w3-margin-top">View StoryMap</a>
-            <p class="w3-text-grey">*Please note that the Web Viewer within this StoryMap is only viewable through Fleming ArcGIS Online Accounts.</p>
-        </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- Geocortex Grid ----------------------------------->
-<div id="vert" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="content2">
-        <div class="w3-third extrapadr">
-            <h1>Geocortex 5 Web</h1>
-            <h5 class="w3-padding-32">York Region requested a web map viewer to allow easy exploration of the spatial data relevant to the flood and criticality analyses. Geocortex 5 Web was selected as the optimal platform based on availability and client preference.</h5>
-            <h4>Functionality</h4>
-            <p class="w3-text-grey">The Web Viewer allows users to pan and zoom around the web map, identify features, draw, measure, and search for specific roads or road segments.</p>
-            <h4>Application Design</h4>
-            <p class="w3-text-grey">The Web Viewer was built from an existing template offered by Geocortex and customized with changes to the layout, tool offerings, results display, and map search settings.</p>
-        </div>
-            <!-- Image goes here ---->
-            <div class="w3-half">
-            <img src="images/webviewer0607.png" alt="Web Viewer Sample">
-            <a href="https://luna.flemingcollege.ca/Geocortex/WebViewer/?app=5b37740030804277a392860efca75e1b" target="_blank" class="w3-button YRblue w3-padding-large w3-large w3-margin-top">Go To Web Viewer</a>
-            <p class="w3-text-grey">*Please note the link above will only work with Fleming ArcGIS Online Accounts</p>
-            <h4>Development Process</h4>
-            <p class="w3-text-grey">A collection of widgets deemed potentially useful to transportation managers was selected for the toolbar at the top of the application. Other tools, like adding additional layers to the map and editing location notes were tucked into a drop-down menu. The search function was tweaked so that when a user searches a road segment ID, a list is provided of all assets with that same ID.</p>
-        </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+      </div>
     </div>
-</div>
-
-<!-- ArcGIS Dashboard Grid Starts here ------------------------------------------------------------>
-<div id="dash" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="content2">
-        <div class="w3-third extrapadr">
-            <h1>ArcGIS Dashboards</h1>
-            <h5 class="w3-padding-16">In order to effectively communicate the results of this project, ArcGIS Dashboards was used as it allows users to explore the data further with a web map, various widgets, and filters.</h5>
-            <h4>Functionality</h4>
-            <p class="w3-text-grey">This Dashboard has several functions using widgets and elements that allow users to view and analyze the flood risk analysis results. This includes widgets such as a top 10 critical roads list, section to display number of flood vulnerable assets, municipality and road segment filters, and critical ranking indicator.</p>
-            <h4>Application Design</h4>
-            <p class="w3-text-grey">The layout of the application was designed to be visually appealing without overwhelming the user. This was to help users quickly see which information they want in a clear and concise format. It displays information while allowing the user some interactive options to further explore the data.</p>
-        </div>
-        <div class="w3-twothird w3-padding-32">
-        <!-- Picture goes here -->
-        <img src="images/FinalDashboard.png" alt="ArcGIS Dashboard Example">
-        <a href="https://fleming.maps.arcgis.com/apps/dashboards/13bc20360acd4733a15dbc0a712fb4d1" target="_blank" class="w3-button YRblue w3-padding-large w3-large w3-margin-top">View Dashboard</a>
-        <h4>Development Process</h4>
-        <p class="w3-text-grey">The first version of the Dashboard focused more on the application layout, rather than functionality. After receiving feedback from the client and advisor, the second version was developed and included further modifications in configuring widgets, elements and layout. These include displaying the vulnerable assets, configuring the web map and selectors, critical ranking indicator, regional roads list and more. After further edits were made, the third version was presented to the client and finalized.</p>
-        </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
     </div>
-</div>
-
-<!-- CONCLUSION Grid ------------------------------------------------------------------>
-<div id="conclusion" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="content2">
-        <div class="w3-third extrapadr">
-            <!-- Picture goes here -->
-            <i class="fa fa-lightbulb-o w3-padding-64 YRblueIcon w3-margin-right"></i>
-        </div>
-            <!-- Text starts here -->
-            <div class="w3-twothird">
-            <h1>Conclusion</h1>
-            <h5 class="w3-padding-32">As climate change continues and flooding impacts worsen, transportation and infrastructure assets in York Region need to be evaluated to understand where there are potential risks. Before this project, there was no solution possessed by York Region to do so and these tools and applications resolve that. Our deliverables include the final web applications, technical documentation and the spatial analysis automated tools. </h5>
-            <h3>Project Benefits</h3>
-            <p class="w3-text-grey">The following is a list of benefits our project provides for York Region: </p>
-                <p class="w3-text-grey">• Provide a foundation using web GIS for managing flood impacts to transportation assets</p>
-                <p class="w3-text-grey">• Automated python tools to save the client time & effort</p>
-                <p class="w3-text-grey">• Provide generalized criticality ranking for each road segment</p>
-                <p class="w3-text-grey">• Support the assessment of design standards for at-risk transportation and infrastructure assets</p>
-                
-            <h3>Future Considerations</h3>
-            <p class="w3-text-grey">If time allowed, we would have like to consider some potential improvements to the solutions being presented:</p>
-                <p class="w3-text-grey">• Undergoing a continuous maintenance process of the web application to ensure it functions properly</p>
-                <p class="w3-text-grey">• Find ways to improve efficiency of tools </p> 
-                <p class="w3-text-grey">• Use of other platforms/applications to improve current product</p>
-                <p class="w3-text-grey">• Changes in ESRI/ArcGIS technology could possibly impact the performance of the web application</p>
-                <a href="https://storymaps.arcgis.com/collections/fae67d783640449f9658a6fc6e365609" target="_blank" class="w3-button YRblue w3-padding-large w3-large w3-margin-top">Go To Final Solution</a> 
-        </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
     </div>
-</div>
-
-<!-- Disclaimer grid ----------------------------------------->
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-16">
-    <h1 class="w3-margin w3-xlarge">This project was completed as part of an academic collaborative project with York Region and Fleming College</h1>
-</div>
-
-<!-- Footer starts here ---------------------------------------->
-<footer class="w3-container w3-padding-32 w3-center w3-opacity">
-    <div>
-        <img src="images/FlemingGIS_Logo_Black.png" alt="Fleming GIS Logo">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
     </div>
-    <a href=#header class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Back to Top</a>
-    <p>Layout originally designed by: <a href="https://www.w3schools.com/css/css_rwd_templates.asp" target="_blank">w3.css</a></p>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
-<!-- Javascript here -->
-<script>
-</script>
 
 </body>
 </html>
