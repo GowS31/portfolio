@@ -1,111 +1,5 @@
-/* ----------------------------------------- */
-/* Styling the nav bar starts here */
-ul { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1F2833;
-    }
-
-.navbar {
-    text-align: center;
-    display:flex;
-    justify-content: center;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    /*max-width: 100%;
-    width:auto; */
-}
-.navbar div {
-    flex: 1 1 auto;
-}
-    
-li {
-    display: inline;
-    /*float: left;*/
-} 
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #45A29E;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-    
-.dropdown-content a:hover {background-color: #C5C6C7;}
-    
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-/* Styling header image reference here!! */
-/* image retrieved from: https://www.northernontario.travel/boating/5-ontario-pwc-destinations-worth-trailering-to */
-.headerpic {
-    background-image: url("images/water_header2.jpg");
-    background-color: #cccccc;
-}
-
-.headerwords {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding-top: 20px;
-    border-radius: 25px
-}
-
-/* fleming picture for footer */
-.footerpic {
-    background-image: url("images/FlemingSENRS_noBackground.png");
-    background-color: #cccccc;
-}
-
-/* Needed to make the w3 content part bigger for pictures */
-.content2 {
-    max-width: 1200px;
-    margin-left:auto;
-    margin-right:auto
-}
-
-/* Needed extra space between sections */
-.extrapadr {
-    padding-right: 29px;
-}
-
-.extrapadl {
-    padding-left: 20px;
-}
-
-/* W3 Schools CSS Taken Straight from Their Website */
-/* Ideally DONT TOUCH THIS */
-
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
@@ -130,8 +24,6 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-
-/* Basic settings start here!!! */
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
@@ -173,7 +65,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
 .w3-bar .w3-button{white-space:normal}
 .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
-.w3-bar-block.w3-center .w3-bar-item{text-align:left}.w3-block{display:block;width:100%}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
 .w3-responsive{display:block;overflow-x:auto}
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
@@ -256,10 +148,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-button:hover{color:#000!important;background-color:#ccc!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
-
 /* Colors */
-.YRblue{color:#fff;background-color:#1169B3}
-.YRblueIcon{color:#1169B3}
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
 .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
