@@ -81,24 +81,52 @@
     <p>This section goes over various work completed for the GIS Applications Specialist program at Fleming College.</p>
 
     <h4><b>1. Agricultural Land Use Suitability MCDA for Peel Region</b></h4>
-    <p>The following map showcases the location of various cemeteries that are located within the Peel Region (Ontario, Canada). The data was taken from the Region of Peel website and their Open Data Portal. Made use of ArcGIS Pro.</p>	  
+    <p>The following output was created as part of a Spatial Analysis course where I developed a multi-criteria decision analysis on the suitability of agricultural land use in Peel Region (</p>	  
 	  
 	  
     <h4><b>2. Toronto Neighbourhood Safety Web Map Application</b></h4>
-    <p>The following map showcases the location of various cemeteries that are located within the Peel Region (Ontario, Canada). The data was taken from the Region of Peel website and their Open Data Portal. Made use of ArcGIS Pro.</p>  
+    <p>These web map solutions were created as part of a group project, which allows users to view Toronto public safety resources using Dashboard & Geocortex. The Dashboard solution provides a straight-forward user experience through which data relating to public safety resources is updated in real-time and allows user to zoom, query and select neighbourhoods. The Geocortex Web Viewer provides the opportunity to explore data to a greater depth. Both solutions were hosted in a single web environment through ESRI's Experience Builder. ArcGIS Arcade was used to configure the pop-ups in the application.</p>  
+	  
+	  <h5> ArcGIS Arcade and Pop-Up Configuration</h5>
+    <p>Arcade was used in this project to configure the pop-ups for the web mapping application. The objective for using Arcade was to display relevant information in each neighbourhood regarding these services in the pop-up windows.The Arcade code was developed to display within each neighbourhood polygon all the names of health services (once clicked upon, will generate the pop-up). This is one of the many expressions that run in the background when a pop-up is displayed. This expression makes use of the intersect function to show records (within a polygon) and then iterates throughout every record and creates an array of these location names (forms this array as an output). When configuring the pop-up, we navigate to the pop-up screen and the associated text field. From here, various design choices (typography, color, style, etc.) can be manipulated and the Arcade expression code can be inputted as a form of dynamic text. When users open the popup, they can now see a list of the public safety services within the neighbourhood shown in a simple and clear format.</p>
 	  
 	  
     <h4><b>3. Remote Sensing & Environmental Modeling</b></h4>
-    <p>The following map showcases the location of various cemeteries that are located within the Peel Region (Ontario, Canada). The data was taken from the Region of Peel website and their Open Data Portal. Made use of ArcGIS Pro.</p>
+    <p>There were several projects I completed involving remote sensing and performing various tasks with PCI Geomatica and eCognition. The following are a few outputs from various assignments.</p>
+	  
+	  <h5>Greyscale Landsat TM Image in Lindsay, Ontario</h5>
+	  <p>Greyscale of Landsat TM Image of image objects of NDVI (Normalized Difference Vegetation Index) grayscale values and highlighting the NDVI vales (-1 to 0 values) in Lindsay, Ontario (September 1999) highlighting water features, wetlands, and other wet/damp regions (green). </p>
+	  <h5>Geometric Correction of Landsat TM Image in Rice Lake </h5>
+	  <p>Geometrically Corrected (Standard False Color Composite) Landsat 5 TM Image
+over Rice Lake, Peterborough, Ontario (with black road vectors) on June 12, 1992. </p>
+	  <h5>Terraine Model for Peterborough, Ontario</h5>
+	  <p>The following output was created for an assignment detailing a TIN (Triangular Irregular Network) and DEM (Digital Elevation Model) for a research area in Peterborough, Ontario. Terrain Models - Digital Elevation Model (DEM) & Triangular Irregular Network (TIN) of research area in Peterborough (National Topographic System 31D8 data)</p>
+	  <h5>Multi-Spectral Supervised Classification Map of Oak Ridges Moraine</h5>
+	  <p>Multi-Spectral Supervised Classification Map displaying the land cover classification of 6 areas using Operational Land Imager (OLI) within the Oak Ridges Moraine (Ontario, Canada) on April 14, 2017. </p>
 	  
 	  
     <h4><b>4. Lake Simcoe Biomass Dashboard</b></h4>
     <p>The following map showcases the location of various cemeteries that are located within the Peel Region (Ontario, Canada). The data was taken from the Region of Peel website and their Open Data Portal. Made use of ArcGIS Pro.</p>
 	  
+	  
+	  
+	  
     <h4><b>5. York Region Flood Vulnerable Assets</b></h4>
-    <p>The following map showcases the location of various cemeteries that are located within the Peel Region (Ontario, Canada). The data was taken from the Region of Peel website and their Open Data Portal. Made use of ArcGIS Pro.</p>
+    <p>This project aimed to provide a first look at the vulnerability of the Region's transportation assets to flooding. Made use of Python, ArcGIS Pro and Online, VertiGIS Geocortex, Arcade, ArcGIS Dashboards and StoryMaps. To assist regional staff in determining critical transportation infrastructure assets that are currently at risk of damage during flood events. To develop desktop tools and web solutions (Dashboard & Geocortex 5 Web Viewer) to be used by York Region staff for assessing design standards for asset types in floodplain locations.</p>
+	  
+	  	  <h5>ArcGIS Pro / Desktop Tools</h5>
+	  <pIn order to provide the client with an iterative process for identifying criticality and flood vulnerable assets, ArcGIS Pro was used to develop desktop ModelBuilder and Python tools to accomplish this. Find Flood Vulnerable Assets Tool - This tool will identify assets that are at risk of flooding. Criticality Ranking Tool - This tool will rank road assets based on the total number of assets along a given road segment.</p>
+	  
+		  	  <h5>ArcGIS Dashboards</h5>
+	  <p>In order to effectively communicate the results of this project, ArcGIS Dashboards was used as it allows users to explore the data further with a web map, various widgets, and filters. This Dashboard has several functions using widgets and elements that allow users to view and analyze the flood risk analysis results. This includes widgets such as a top 10 critical roads list, section to display number of flood vulnerable assets, municipality and road segment filters, and critical ranking indicator. The layout of the application was designed to be visually appealing without overwhelming the user. This was to help users quickly see which information they want in a clear and concise format. It displays information while allowing the user some interactive options to further explore the data. </p>
 	  
 	  
+	  	  <h5>Geocortex 5 Web</h5>
+	  <p>York Region requested a web map viewer to allow easy exploration of the spatial data relevant to the flood and criticality analyses. Geocortex 5 Web was selected as the optimal platform based on availability and client preference. The Web Viewer allows users to pan and zoom around the web map, identify features, draw, measure, and search for specific roads or road segments. The Web Viewer was built from an existing template offered by Geocortex and customized with changes to the layout, tool offerings, results display, and map search settings. </p>
+	  
+	  
+	   <h5>ArcGIS StoryMaps</h5>
+	  <p>A StoryMap Collection is used as the container for the two web products that were created in this project. This allows the user to stay on one page to view two different applications. The Collection keeps the light colour theme of both the Web Viewer and Dashboard products and makes use of a prominent shade of blue from York Region's logo as the accent colour for consistency. Configuration of the StoryMap Collection was very simple. In a new Collection template, the two applications were added as ArcGIS Content with appropriate thumbnails and titles. The default “Grid” layout option was kept and the Navigation style was set to the tabbed option so the application titles would be displayed in the final collection. </p>
 	 
   </div>
   
