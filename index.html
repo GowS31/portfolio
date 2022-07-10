@@ -83,34 +83,40 @@
 
     <h4><b>1. Agricultural Land Use Suitability MCDA for Peel Region</b></h4>
     <p>The following output was created as part of a Spatial Analysis course where I developed a multi-criteria decision analysis on the suitability of agricultural land use in Peel Region. </p>	  
-	<img src="images/storymap.png" alt="MCDA Agricultural Suitability in Peel Region" width="350" height="350">
+	<img src="images/mcda.PNG" alt="MCDA Agricultural Suitability in Peel Region" width="350" height="350">
     
     <h4><b>2. Toronto Neighbourhood Safety Web Map Application</b></h4>
-    <p>These web map solutions were created as part of a group project, which allows users to view Toronto public safety resources using ArcGIS Dashboard & VertiGIS Geocortex. The Dashboard solution provides a straight-forward user experience which data relating to public safety resources is updated in real-time and lets users zoom, query and select neighbourhoods. The Geocortex application provides the opportunity to explore data to a greater depth. Both solutions were hosted in a single web environment through ArcGIS Experience Builder.</p>  
-	<img src="images/storymap.png" alt="Toronto Neighbourhood Safety Web Application" width="350" height="350">  
+    <p>These web map solutions were created as part of a group project, which allows users to view Toronto public safety resources using ArcGIS Dashboard & VertiGIS Geocortex. The Dashboard solution provides a straight-forward user experience which data relating to public safety resources is updated in real-time and lets users zoom, query and select neighbourhoods. </p>  
+	<img src="images/edge.PNG" alt="Toronto Neighbourhood Safety Web Application" width="350" height="350">  
+	  
+    <p>The Geocortex application provides the opportunity to explore data to a greater depth. Both solutions were hosted in a single web environment through ArcGIS Experience Builder.</p>
+	<img src="images/edge1.PNG" alt="Toronto Neighbourhood Safety Web Application" width="350" height="350">
       
-	<h5><b> ArcGIS Arcade and Pop-Up Configuration</b></h5>
+    <h5><b> ArcGIS Arcade and Pop-Up Configuration</b></h5>
     <p>Arcade was used in this project to configure the pop-ups for the web mapping application and to display relevant information in each neighbourhood regarding these services in the pop-up windows.The Arcade code was developed to display within each neighbourhood polygon all the names of health services. This expression makes use of the intersect function to show records and then iterates throughout every record and creates an array of these location names. When configuring the pop-up, we navigate to the pop-up screen and the associated text field. From here, various design choices can be manipulated and the Arcade expression code can be inputted as a form of dynamic text. When users open the popup, they can see a list of the public safety services within the neighbourhood shown in a clear format.</p>
-	<img src="images/storymap.png" alt="Arcade Configuration" width="350" height="350">
+	<img src="images/edge4.PNG" alt="Arcade Configuration" width="350" height="350">
+	  
+	  
+	  
 	  
     <h4><b>3. Remote Sensing & Environmental Modeling</b></h4>
     <p>These outputs were completed for assignments from courses involving remote sensing and environmental modeling.</p>
 	  
 	<h5><b>Greyscale Landsat TM Image in Lindsay, Ontario</b></h5>
 	<p>Greyscale of Landsat TM Image of image objects of NDVI (Normalized Difference Vegetation Index) grayscale values and highlighting the NDVI vales (-1 to 0 values) in Lindsay, Ontario (September 1999) highlighting water features, wetlands, and other wet/damp regions (green). </p>
-    <img src="images/storymap.png" alt="Greyscale Landsat TM Image" width="350" height="350">
+    <img src="images/green.PNG" alt="Greyscale Landsat TM Image" width="350" height="350">
     
 	<h5><b>Geometric Correction of Landsat TM Image in Rice Lake, Ontario</b></h5>
 	<p>Geometrically Corrected (using Standard False Color Composite) Landsat 5 TM Image over Rice Lake, Peterborough, Ontario (with black road vectors) on June 12, 1992. </p>
-	<img src="images/storymap.png" alt="Geometric Correction" width="350" height="350">
+	<img src="images/red.PNG" alt="Geometric Correction" width="350" height="350">
     
-    <h5><b>Terraine Model for Peterborough, Ontario</b></h5>
+    <h5><b>Terrain Model for Peterborough, Ontario</b></h5>
 	<p>Created a TIN (Triangular Irregular Network) and DEM (Digital Elevation Model) for a research area in Peterborough, Ontario (National Topographic System 31D8 data).</p>
-	<img src="images/storymap.png" alt="Terraine Model" width="350" height="350"> 
+	<img src="images/terrain.png" alt="Terrain Model" width="350" height="350"> 
       
     <h5><b>Multi-Spectral Supervised Classification Map of Oak Ridges Moraine, Ontario</b></h5>
 	<p>Multi-Spectral Supervised Classification Map displaying the land cover classification of 6 areas using Operational Land Imager (OLI) within the Oak Ridges Moraine on April 14, 2017. </p>
-	<img src="images/storymap.png" alt="Supervised Classification" width="350" height="350"> 
+	<img src="images/color.PNG" alt="Supervised Classification" width="350" height="350"> 
      
     <h4><b>4. Lake Simcoe Biomass Web Application</b></h4>
     <p>Created using ArcGIS Web AppBuilder, this application was designed based on biomass data from Lake Simcoe with the configuration of various widgets and elements. </p>
@@ -150,7 +156,7 @@
     
     <h4><b>2. Brampton Facilities - Energy Consumption & Greenhouse Gas Emissions Web Map Application</b></h4>
     <p>A web map application (hosted on ArcGIS Online) based on the City of Brampton facilities and their annual GHG (greenhouse gas) emissions, natural gas/energy consumption and more. This dataset has 711 records and includes city facilities such as public libraries, sports facilities, fire stations, transit buildings and administrative offices. Users can inspect the different sites and view relevant information pertaining to each site. They can also zoom in/out of different areas on the map, use the search feature, view the attribute table and more. An  arcade expression was created which assesses each facilities respective GHG (greenhouse gas) emissions and displays whether it is above or below 50,000 kg.</p>
-    <img src="images/energy.PNG" alt="Energy" width="350" height="350">
+    <center><img src="images/energy.PNG" alt="Energy" width="350" height="450"></center>
     
     <h4><b>3. City of Toronto Coronavirus (COVID-19) Web Map Application</b></h4>
     <p>Created with ArcGIS Pro and hosted on ArcGIS Online, this application revolves around the coronavirus (COVID-19) and related datasets within the city of Toronto. This application has data layers including areas of neighbourhood improvement, locations of immunization clinics, testing site locations, public health service provider locations and the neighbourhood profile of Toronto (includes clipped data from an air pollution and COVID-19 impacts dataset in Toronto Neighbourhoods). Using ArcGIS WebApp Builder, the application has various widgets/elements and users can zoom in and out of different areas, filter data and layers and select different areas for information. The data for this project was gathered from various open datasets such as the City of Toronto, Government of Canada, and the Ontario GeoHub website.</p>
@@ -175,7 +181,7 @@
     
     <h4><b>5. Cartographic Map of Zambia Hosptials & Airports</b></h4>
     <p>This map displays the country of Zambia (Africa) and the locations of various hospitals, airports, country and provincial boundaries. The data was gathered from various websites and data portals. </p>
-    <img src="images/storymap.png" alt="Zambia" width="350" height="350">
+    <img src="images/zambia.PNG" alt="Zambia" width="350" height="350">
     
   </div>
 
